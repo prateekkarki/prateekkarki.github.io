@@ -219,7 +219,7 @@ button:focus {
 .header_area {
   position: absolute;
   width: 100%;
-  z-index: 9999;
+  z-index: 9;
   background: #ffffff; }
   .header_area .menu_nav {
     width: 100%; }
@@ -2480,7 +2480,7 @@ h6 {
       padding-bottom: 50px; } }
 
 .feature_item {
-  padding: 45px 25px;
+  padding: 25px 25px;
   text-align: center;
   background: #f9f9fd;
   cursor: pointer;
@@ -2493,7 +2493,7 @@ h6 {
     margin-bottom: 35px; }
   .feature_item h4 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-transform: uppercase; }
   .feature_item p {
     margin-bottom: 0px; }

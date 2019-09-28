@@ -9,14 +9,20 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="Description" content="Web developer landing page for Prateek Karki">
-	<title>Prateek Karki - Web Developer from Kathmandu, Nepal.</title>
+	<title>Prateek Karki - Full-stack web developer from Kathmandu, Nepal.</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css"> -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/photoswipe.css"> 
+	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+
+
 	<link rel="stylesheet" href="css/style2.css">
 </head>
 
@@ -53,7 +59,7 @@
 						<div class="banner_content" data-aos="fade-right">
 							<h3 class="text-uppercase">Hell0</h3>
 							<h1 class="text-uppercase">I am Prateek Karki</h1>
-							<h5 class="text-uppercase">Framework agnostic PHP developer</h5>
+							<h5 class="text-uppercase">Full-stack PHP developer</h5>
 							<div class="d-flex align-items-center">
 								<a class="primary_btn"class="js-scroll-trigger" href="#contact" data-aos="fade-right"><span>Hire Me</span></a>
 								<a class="primary_btn tr-bg" href="resume" data-aos="fade-right"><span>Get CV</span></a>
@@ -116,25 +122,25 @@
 							<div class="col-lg-6 col-md-6">
 								<div class="feature_item">
 									<img src="img/services/s1.png" alt="">
-									<h4>Wp developing</h4>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="feature_item">
-									<img src="img/services/s2.png" alt="">
-									<h4>UI/ux design</h4>
+									<h4>Web App</h4>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="feature_item">
 									<img src="img/services/s3.png" alt="">
-									<h4>Web design</h4>
+									<h4>E-Commerce</h4>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="feature_item">
+									<img src="img/services/s2.png" alt="">
+									<h4>CMS</h4>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="feature_item">
 									<img src="img/services/s4.png" alt="">
-									<h4>seo optimize</h4>
+									<h4>Site optimization</h4>
 								</div>
 							</div>									
 						</div>
@@ -151,7 +157,7 @@
 								</div>
 								<div class="ml-15">
 									<p>call me now</p>
-									<h3>(+977)-984-241-1133</h3>
+									<h4><a class="text-dark" href="tel:+9779842411133">(+977)-984-241-1133</a></h4>
 								</div>
 							</div>
 						</div>
@@ -236,7 +242,7 @@
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
                             <h6>Kathmandu, Nepal.</h6>
-                            <p>Naya Baneshwar</p>
+                            <p>Naya Baneshwor</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
@@ -298,6 +304,70 @@
 		</div>
 	</footer>
 
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	    <!-- Background of PhotoSwipe. 
+	         It's a separate element as animating opacity is faster than rgba(). -->
+	    <div class="pswp__bg"></div>
+
+	    <!-- Slides wrapper with overflow:hidden. -->
+	    <div class="pswp__scroll-wrap">
+
+	        <!-- Container that holds slides. 
+	            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+	            Don't modify these 3 pswp__item elements, data is added later on. -->
+	        <div class="pswp__container">
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	        </div>
+
+	        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+	        <div class="pswp__ui pswp__ui--hidden">
+
+	            <div class="pswp__top-bar">
+
+	                <!--  Controls are self-explanatory. Order can be changed. -->
+
+	                <div class="pswp__counter"></div>
+
+	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+	                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+	                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+	                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+	                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+	                <!-- element will get class pswp__preloader--active when preloader is running -->
+	                <div class="pswp__preloader">
+	                    <div class="pswp__preloader__icn">
+	                      <div class="pswp__preloader__cut">
+	                        <div class="pswp__preloader__donut"></div>
+	                      </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	                <div class="pswp__share-tooltip"></div> 
+	            </div>
+
+	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+	            </button>
+
+	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+	            </button>
+
+	            <div class="pswp__caption">
+	                <div class="pswp__caption__center"></div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/stellar.js"></script>
@@ -307,13 +377,41 @@
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
 	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<!-- <script src="vendors/owl-carousel/owl.carousel.min.js"></script> -->
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJYW0kk_UatwzIkeMccirMHMbgSDWMn9E"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script src="js/photoswipe.min.js"></script> 
+	<script src="js/photoswipe-ui-default.min.js"></script> 
+
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+
+
+
+	<script type="text/javascript">
+		var pswpElement = document.querySelectorAll('.pswp')[0];
+
+		var items = [
+		    {
+		        src: 'img/portfolio/millertripods.png',
+		        w: 1903,
+		        h: 4128
+		    }
+		];
+
+		// define options (if needed)
+		var options = {
+		    index: 0 // start at first slide
+		};
+
+		// Initializes and opens PhotoSwipe
+		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+		gallery.init();
+
+	</script>
 </body>
 
 </html>
