@@ -155,7 +155,7 @@
 				<div class="col-lg-12">
 					<div class="main_title text-left">
 						<h2>quality work <br>
-							Recently done project </h2>
+							Recently done projects </h2>
 					</div>
 				</div>
 			</div>
@@ -282,7 +282,7 @@
                             </div>
                         </div>
                         <input type="text" name="_gotcha" style="display:none" />
-
+                        <input type="hidden" name="_next" value="https://prateekkarki.github.io/?formSubmitSuccess"/>
                         <div class="col-md-12 text-right">
                             <button type="submit" value="submit" class="primary_btn">
                                 <span>Send Message</span>
@@ -327,6 +327,16 @@
 
 
 	<script type="text/javascript">
+
+	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+	    for(var i = 0; i < hashes.length; i++)
+	    {
+	        hash = hashes[i];
+	        if(hash == 'formSubmitSuccess')
+	        	alert("Thanks for reaching out. I\'ll get back to you soon :)");
+	    }
+
+
 		var pswpElement = document.querySelectorAll('.pswp')[0];
 
 		var items = [
