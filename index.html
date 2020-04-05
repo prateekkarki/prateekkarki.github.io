@@ -17,6 +17,11 @@
 			Prateek Karki - Full-stack web developer from Kathmandu, Nepal.
 		</title>
 		<link rel="stylesheet" href="css/style2.min.css" />
+		<style>
+			.navbar-collapse {
+				overflow: hidden !important;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -568,19 +573,9 @@
 				gallery.init();
 			});
 
-			$(".img-gal").click(function (e) {
+			$(".navbar-toggler").click(function (e) {
 				e.preventDefault();
-				let index = Array.from(
-					e.target.parentElement.parentElement.parentElement.parentElement
-						.parentElement.parentElement.children
-				).indexOf(
-					e.target.parentElement.parentElement.parentElement.parentElement
-						.parentElement
-				);
-				var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-					index: index,
-				});
-				gallery.init();
+				$(".navbar-collapse").toggleClass("collapse");
 			});
 		</script>
 	</body>
